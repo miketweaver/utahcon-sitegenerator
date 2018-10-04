@@ -83,6 +83,12 @@ def get_file_format(file_extension):
 	formats = json.loads(formats)
 	return formats.get(file_extension[1:], "fa-file")
 
+def gen_footer():
+	file = open(main_path + "/foot.html", "r") 
+	item = file.read()
+	file.close()
+	return item
+
 def gen_item(name, path, url, size, date, file_type):
 	file = open(main_path + "/file_item.html", "r") 
 	item = file.read()
@@ -105,7 +111,7 @@ def loadLevel(input):
 	for x in input.keys():
 		if isinstance(input[x], dict):
 			if input[x].get('url'):
-				files.append(generate_file(x,input[x], file_path))
+				files.append([input[x].get("date"),x,input[x]])
 			else:
 				directories.append(generate_folder(x, file_path))
 				safe_make_folder(x)
@@ -121,8 +127,13 @@ def loadLevel(input):
 			index_file += directory
 
 	if files != [None, None]:
+		# sort files, hopefully by date
+		files = sorted(files)
 		for file in files:
+			file = generate_file(file[1],file[2], file_path)
 			index_file += file
+
+	index_file += gen_footer()
 
 	file = open("index.html","w") 
 	file.write(index_file)

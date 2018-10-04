@@ -2,20 +2,159 @@ SAINTCON :
     '2016' :
         Nathan_Cooper_-_Social_Engineering_If_You_Can't_Beat_Them,_Join_Them.mp4 :
             url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Nathan_Cooper_-_Social_Engineering_If_You_Can%27t_Beat_Them%2C_Join_Them.mp4
-            size: 491.40MB
+            size: 491.40 MB
             date: 2016-10-11 13:27:53
         Dmitry_Dessiatnikov_-_How_to_integrate_security_into_Agile_SDLC_using_OWASP.mp4 :
             url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Dmitry_Dessiatnikov_-_How_to_integrate_security_into_Agile_SDLC_using_OWASP.mp4
-            size: 973.10MB
+            size: 973.10 MB
             date: 2016-10-12 14:51:34
-    README.TXT : 
-        url: https://aoeu.com
-        size: 10MB
-        date: 2018-10-10 10:10:10
-        type: archive
+        Nathan_Cooper_-_Zero_to_PCI_in_50_minutes.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Nathan_Cooper_-_Zero_to_PCI_in_50_minutes.mp4
+            size: 951.2 MB
+            date: 2016-10-12 17:50:23
+        Aaron_Toponce_(eightyeight)_-_Security_Through_Obesity.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Aaron_Toponce_%28eightyeight%29_-_Security_Through_Obesity.mp4
+            size: 1.01 GB
+            date: 2016-10-12 10:53:11
+        Andrew_Brandt_(Spike)_-_Ingress_Egress_-_The_emerging_threats_of_augmented-reality_gaming.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Andrew_Brandt_%28Spike%29_-_Ingress_Egress_-_The_emerging_threats_of_augmented-reality_gaming.mp4
+            size: 1.16 GB
+            date: 2016-10-12 09:59:27
+        Chad_Butler_-_Big_Shop_AppSec_for_Everyone_Else.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Chad_Butler_-_Big_Shop_AppSec_for_Everyone_Else.mp4
+            size: 999.02 MB
+            date: 2016-10-11 15:54:41
+        Chris_Czub_-_Sorting_the_Mess.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Chris_Czub_-_Sorting_the_Mess.mp4
+            size: 344.70 MB
+            date: 2016-10-11 11:27:32
+        Clutch_&_CrYpT_-_Lae_Rcfb_Evyjw_Ros_Tcts_Fiddxd_Wqoiasfx.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Clutch_%26_CrYpT_-_Lae_Rcfb_Evyjw_Ros_Tcts_Fiddxd_Wqoiasfx.mp4
+            size: 630.4 MB
+            date: 2016-10-11 09:50:47
+        Cory_Stokes_&_Derek_Larson_-_Using_Security_Self_Assessment_Survey_Tools.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Cory_Stokes_%26_Derek_Larson_-_Using_Security_Self_Assessment_Survey_Tools.mp4
+            size: 927.7 MB
+            date: 2016-10-12 11:47:58
+        Dale_Rowe_(tetraide)_-_Surviving_Under_Stress_-_Training_a_Cyberdefense_Team_for_Nationals.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Dale_Rowe_%28tetraide%29_-_Surviving_Under_Stress_-_Training_a_Cyberdefense_Team_for_Nationals.mp4
+            size: 994.4 MB
+            date: 2016-10-11 14:51:58
+        Erich_Ficker_(burnd0wn)_-_IoT_of_Doom_A_Survey_of_3_Vulnerable_Ecosystems.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Erich_Ficker_%28burnd0wn%29_-_IoT_of_Doom_A_Survey_of_3_Vulnerable_Ecosystems.mp4
+            size: 1.06 GB
+            date: 2016-10-11 14:56:34
+        Georgia_Weidman_-_Nine_years_into_mobility,_has_security_caught_up.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Georgia_Weidman_-_Nine_years_into_mobility%2C_has_security_caught_up.mp4
+            size: 754.6 MB
+            date: 2016-10-11 12:09:56
+        Josh_Dustin_(@joshdustin)_-_They_used_my_own_method_to_own_my_account.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Josh_Dustin_%28%40joshdustin%29_-_They_used_my_own_method_to_own_my_account.mp4
+            size: 978.8 MB
+            date: 2016-10-12 09:50:02
+        Neil_Wyler_(Grifter)_-_Left_of_Owned_Becoming_the_Hunter_Instead_of_the_Hunted.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Neil_Wyler_%28Grifter%29_-_Left_of_Owned_Becoming_the_Hunter_Instead_of_the_Hunted.mp4
+            size: 1.06 GB
+            date: 2016-10-11 13:56:33
+        Sam_Mclane_-_Changing_the_Economics_of_Security_Operations.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Sam_Mclane_-_Changing_the_Economics_of_Security_Operations.mp4
+            size: 478.8 MB
+            date: 2016-10-11 13:54:36
+        Troy_Jessup_(Jup1t3r)_-_Conference_Opener.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Troy_Jessup_%28Jup1t3r%29_-_Conference_Opener.mp4
+            size: 303 MB
+            date: 2016-10-11 09:15:21
+        Sean_Jackson_(74rku5)_-_Oooh!_We_ve_Had_An_Incident!_How_Should_We_Respond.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Sean_Jackson_%2874rku5%29_-_Oooh%21_We_ve_Had_An_Incident%21_How_Should_We_Respond.mp4
+            size: 1.04 GB
+            date: 2016-10-13 15:53:38
+        Brent_White_&_Tim_Roberts_-_Forging_Your_Identity_Credibility_Beyond_Words.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Brent_White_%26_Tim_Roberts_-_Forging_Your_Identity_Credibility_Beyond_Words.mp4
+            size: 992.7 MB
+            date: 2016-10-14 09:51:02
+        Cam_Morris_(c4mm0r)_-_OAuth2_&_Openid-Connect_Good,_Bad,_and_Ugly.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Cam_Morris_%28c4mm0r%29_-_OAuth2_%26_Openid-Connect_Good%2C_Bad%2C_and_Ugly.mp4
+            size: 638.4 MB
+            date: 2016-10-13 14:34:09
+        Jason_Tracy_(JT)_-_But_What_If_I'm_Not_a_Coder.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Jason_Tracy_%28JT%29_-_But_What_If_I%27m_Not_a_Coder.mp4
+            size: 704.3 MB
+            date: 2016-10-14 10:38:17
+        Jon_Jarvis_-_Someone_created_a_super-secret_UtahSAINT_subreddit.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Jon_Jarvis_-_Someone_created_a_super-secret_UtahSAINT_subreddit.mp4
+            size: 530.3 MB
+            date: 2016-10-14 12:30:21
+        Josh_Galvez_-_Hackers_Challenge_Shakedown.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Josh_Galvez_-_Hackers_Challenge_Shakedown.mp4
+            size: 845.3 MB
+            date: 2016-10-14 14:08:54
+        Luke_Jenkins_-_Network_Wrap-up_Jonathan_Karras_&_Klint_Holmes_-_Badge_Wrap-up.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Luke_Jenkins_-_Network_Wrap-up_Jonathan_Karras_%26_Klint_Holmes_-_Badge_Wrap-up.mp4
+            size: 307.6 MB
+            date: 2016-10-14 13:16:49
+        Adam_Steed_(@Adaboyiam)_-_Patching_Monthly_May_Be_IMPOSSIBLE.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Adam_Steed_%28%40Adaboyiam%29_-_Patching_Monthly_May_Be_IMPOSSIBLE.mp4
+            size: 952.7 MB
+            date: 2016-10-13 09:52:14
+        Andrew_Brandt_(Spike)_-_No_Safety_for_Old_Phones_How_Android_became_the_new_Windows_XP.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Andrew_Brandt_%28Spike%29_-_No_Safety_for_Old_Phones_How_Android_became_the_new_Windows_XP.mp4
+            size: 587.6 MB
+            date: 2016-10-12 13:25:27
+        Ashok_Banerjee_-_Anatomy_of_Cyber_Attacks_and_Cybersecurity_Defense.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Ashok_Banerjee_-_Anatomy_of_Cyber_Attacks_and_Cybersecurity_Defense.mp4
+            size: 1.08 GB
+            date: 2016-10-12 14:59:39
+        Chris_Larsen_-_Phishing_with_Dynamite_Shrapnel_from_the_TLD_Explosion.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Chris_Larsen_-_Phishing_with_Dynamite_Shrapnel_from_the_TLD_Explosion.mp4
+            size: 990.2
+            date: 2016-10-12 16:50:42
+        Henry_Hill_-_You_didn't_wipe_your_drives_and_now_this_talk_happened.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Henry_Hill_-_You_didn%27t_wipe_your_drives_and_now_this_talk_happened.mp4
+            size: 613.1 MB
+            date: 2016-10-12 15:33:31
+        Jason_Wood_-_Red_Teaming_Going_Beyond_the_Technology.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Jason_Wood_-_Red_Teaming_Going_Beyond_the_Technology.mp4
+            size: 1.03 GB
+            date: 2016-10-13 10:53:58
+        Jeremy_Cox_(supertechguy)_-_Getting_Involved_with_the_Lawmaking_Process.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Jeremy_Cox_%28supertechguy%29_-_Getting_Involved_with_the_Lawmaking_Process.mp4
+            size: 462.6 MB
+            date: 2016-10-12 11:24:22
+        Jerry_Smith_-_Privacy_and_Security.._Which_comes_first.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Jerry_Smith_-_Privacy_and_Security.._Which_comes_first.mp4
+            size: 504.5 MB
+            date: 2016-10-11 15:26:54
+        Josh_Galvez_-_How_I_Conquered_the_Hackers_Challenge_and_you_can_too.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Josh_Galvez_-_How_I_Conquered_the_Hackers_Challenge_and_you_can_too.mp4
+            size: 692.4 MB
+            date: 2016-10-12 16:40:13
+        Kent_Schaeffer_(@ne0crank)_-_Ghost_Stories_from_a_SysAdmin.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Kent_Schaeffer_%28%40ne0crank%29_-_Ghost_Stories_from_a_SysAdmin.mp4
+            size: 418 MB
+            date: 2016-10-13 13:57:02
+        Mathew_Toth_(Holiday)_-_Turning_Witchcraft_and_Wizardry_into_Information_Security.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Mathew_Toth_%28Holiday%29_-_Turning_Witchcraft_and_Wizardry_into_Information_Security.mp4
+            size: 382.1 MB
+            date: 2016-10-12 13:49:41
+        Michael_Gough_-_Searching_Logs_for_Hackers_What_you_need_to_know_and_how_to_catch_them.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Michael_Gough_-_Searching_Logs_for_Hackers_What_you_need_to_know_and_how_to_catch_them.mp4
+            size: 1.06 GB
+            date: 2016-10-12 15:58:25
+        Michael_Spicer_(d4rkm4tter)_-_WiFi_Surveillance_at_DEF_CON_24.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Michael_Spicer_%28d4rkm4tter%29_-_WiFi_Surveillance_at_DEF_CON_24.mp4
+            size: 1.07 GB
+            date: 2016-10-13 11:55:29
+        Neil_Wyler_(Grifter)_&_Bart_Stumper_-_Held_for_Ransom_Understanding_the_New_Face_of_Malware.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Neil_Wyler_%28Grifter%29_%26_Bart_Stumper_-_Held_for_Ransom_Understanding_the_New_Face_of_Malware.mp4
+            size: 1.03 GB
+            date: 2016-10-13 10:53:46
+        Steve_Caimi_-_Effective_Detection_Visibility_through_integrated_threat_defense.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Steve_Caimi_-_Effective_Detection_Visibility_through_integrated_threat_defense.mp4
+            size: 655.8 MB
+            date: 2016-10-11 10:27:31
+        Wes_Furgason_-_Building_a_Successful_Security_Awareness_Program.mp4 :
+            url: https://files.utahcon.org/file/utahcon/2016-Saintcon/Wes_Furgason_-_Building_a_Successful_Security_Awareness_Program.mp4
+            size: 538.6 MB
+            date: 2016-10-13 13:30:01
 BSIDES :
 OPENWEST :
-WELCOME.TXT : 
-  url: https://aoeu.com
-  size: 10MB
-  date: 2018-10-10 10:10:10

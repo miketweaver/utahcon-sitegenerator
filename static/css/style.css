@@ -44,6 +44,10 @@ body.breadcrumb-fixed {
     font-family: 'Cutive Mono', monospace, serif;
 }
 
+.con-heading {
+    font-size: 1.4em;
+}
+
 #directory-listing li {
     position: relative;
 }
