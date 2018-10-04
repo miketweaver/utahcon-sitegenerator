@@ -13,7 +13,8 @@ file_path = []
 from distutils.dir_util import copy_tree
 
 def generate_ical(events):
-	c = Calendar(creator="Utahcon.org")
+	# The \n X-WR-CALNAME is VERY VERY HACKY... But it works.
+	c = Calendar(creator="Utahcon.org\nX-WR-CALNAME:Utah Conferences")
 
 	for event in events:
 		if events[event].get("alt-time"):
@@ -157,7 +158,7 @@ def gen_item(name, path, url, size, date, file_type):
 	item = file.read()
 	file.close()
 
-	output = item % (name, path + name, url, name, file_type, name, size, date)
+	output = item % (name, path + name, url, name, name.replace("_"," "), file_type, name.replace("_"," "), size, date)
 	return output
 
 def loadLevel(input):
