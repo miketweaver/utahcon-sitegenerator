@@ -1,0 +1,19 @@
+# UID GENERATOR: https://www.uuidgenerator.net/
+# begin: 'yyyymmdd' <-- the first day of the event
+# end: 'yyyymmdd' <-- the last day of the event
+
+SAINTCON 2019:
+    alt-time : Unannounced - Possibly Oct
+    url : https://saintcon.org/
+BSidesSLC 2019:
+    alt-time : Unannounced - Possibly April
+    url: https://bsidesslc.org/
+OpenWest 2019:
+    alt-time : Unannounced - Possibly June
+    url: https://openwest.org/
+HackWest 2019 :
+#    begin: '20190315'
+#    end: '20190317'
+    url: 'https://hackwest.org/'
+    alt-time : Unannounced - Possibly March
+#    uid: 'a474e030-ac73-4b42-a223-5b68d0d293fc'

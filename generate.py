@@ -3,6 +3,8 @@ from __future__ import print_function
 import yaml
 import os
 import json
+from ics import Calendar, Event
+from datetime import datetime, timedelta
 
 main_path = os.getcwd()  
 build_folder = 'build/'
@@ -10,6 +12,32 @@ build_folder = 'build/'
 file_path = []
 from distutils.dir_util import copy_tree
 
+def generate_ical(events):
+	c = Calendar(creator="Utahcon.org")
+
+	for event in events:
+		if events[event].get("alt-time"):
+			print("No Date, passing: " + event)
+			pass
+		else:
+			print(events[event])
+			new_event = generate_event(event, events[event].get("begin"), events[event].get("end"), events[event].get("description", events[event].get("url")), events[event].get("uid"))
+			c.events.add(new_event)
+
+	with open(main_path + "/" + build_folder + 'conferences.ics','w') as f:
+		f.writelines(c)
+	
+	
+
+def generate_event(name, begin, end, description, uid):
+	e = Event()
+	e.name = name
+	e.begin = datetime.strptime(begin, "%Y%m%d")
+	e.end = datetime.strptime(end, "%Y%m%d") + timedelta(days=1)
+	e.description = description
+	e.uid = uid
+	e.make_all_day()
+	return e
 
 def safe_make_folder(folder):
     '''Makes a folder if not present'''
@@ -54,7 +82,42 @@ def create_home():
 	file = open(main_path + "/main_page_head.html", "r")
 	index = file.read()
 	file.close()
+
+	## Load YAML for events
+	with open(main_path + "/events.yaml", 'r') as stream:
+		try:
+			events = yaml.load(stream)
+		except yaml.YAMLError as exc:
+			print(exc)
+
+	# sort events, hopefully by name
+	sorted_events = sorted(events)
+	for event in sorted_events:
+		if events[event].get("alt-time"):
+			index += gen_event(event, events[event].get("url"), events[event].get("alt-time"))
+		else:
+			begin = events[event].get("begin")
+			begin = datetime.strptime(begin, "%Y%m%d")
+			begin = datetime.strftime(begin, "%Y/%m/%d")
+			end = events[event].get("end")
+			end = datetime.strptime(end, "%Y%m%d")
+			end = datetime.strftime(end, "%Y/%m/%d")
+			date = begin + " - " + end
+			index += gen_event(event, events[event].get("url"), date)
+
+	file = open(main_path + "/main_page_head_2.html", "r") 
+	index += file.read()
+	file.close()
+
 	return index
+
+def gen_event(name, url, date):
+	file = open(main_path + "/event_item.html", "r") 
+	item = file.read()
+	file.close()
+
+	output = item % (name, name, url, name, name, date)
+	return output
 
 def generate_file(file_name, file_object, file_path):
 	url = file_object.get("url")
@@ -123,6 +186,8 @@ def loadLevel(input):
 
 	## This is done to ensure directories are first
 	if directories != [None, None]:
+		# sort directories, hopefully by name
+		directories = sorted(directories)
 		for directory in directories:
 			index_file += directory
 
@@ -153,6 +218,15 @@ os.chdir(build_folder)
 
 ## Create initial index and then recursion!
 loadLevel(utahcon)
+
+## Load YAML for iCal
+with open("events.yaml", 'r') as stream:
+	try:
+	    events = yaml.load(stream)
+	except yaml.YAMLError as exc:
+	    print(exc)
+
+generate_ical(events)
 
 ## Copy Static Files
 
