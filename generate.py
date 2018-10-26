@@ -171,12 +171,16 @@ def loadLevel(input):
 
 	files = list()
 	directories = list()
+	textfiles = ""
+	textfiles_directories = list()
+	textfiles_files = list()
 
 	for x in input.keys():
 		if isinstance(input[x], dict):
 			if input[x].get('url'):
 				files.append([input[x].get("date"),x,input[x]])
 			else:
+				textfiles_directories.append(x)
 				directories.append(generate_folder(x, file_path))
 				safe_make_folder(x)
 				os.chdir(x)
@@ -196,8 +200,21 @@ def loadLevel(input):
 		# sort files, hopefully by date
 		files = sorted(files)
 		for file in files:
+			textfiles_files.append(file[2].get("url"))
 			file = generate_file(file[1],file[2], file_path)
 			index_file += file
+
+	# Create Textfile
+	if textfiles_directories != [None, None]:
+		for folder in textfiles_directories:
+			textfiles += folder + "/\n"
+	if textfiles_files != [None, None]:
+		for url in textfiles_files:
+			textfiles += url + "\n"
+
+	file = open("allfiles.txt","w") 
+	file.write(textfiles)
+	file.close()
 
 	index_file += gen_footer()
 
