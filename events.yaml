@@ -1,6 +1,7 @@
 # UID GENERATOR: https://www.uuidgenerator.net/
 # begin: 'yyyymmdd' <-- the first day of the event
 # end: 'yyyymmdd' <-- the last day of the event
+# udi: 'uid goes here'
 
 SAINTCON 2019:
     alt-time : Unannounced - Possibly Oct

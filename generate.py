@@ -147,10 +147,18 @@ def get_file_format(file_extension):
 	formats = json.loads(formats)
 	return formats.get(file_extension[1:], "fa-file")
 
-def gen_footer():
+def gen_footer(file_path):
+	message = "For questions, contact <a href='https://twitter.com/_bashNinja' target='_blank'>@_bashNinja</a>"
 	file = open(main_path + "/foot.html", "r") 
 	item = file.read()
 	file.close()
+
+	path = ""
+	for folder in file_path:
+		path += folder + "/"
+
+	downloads = "Want to download all the files in the current directory?<br><code>wget -x -nH -i https://utahcon.org/%sdirectory.txt</code>\n<br>What about current directory & subfolders?\n<br><code>wget -x -nH -i https://utahcon.org/%sallfiles.txt</code>" % (path, path)
+	item = item % (downloads, message) 
 	return item
 
 def gen_item(name, path, url, size, date, file_type):
@@ -160,6 +168,42 @@ def gen_item(name, path, url, size, date, file_type):
 
 	output = item % (name, path + name, url, name, name.replace("_"," "), file_type, name.replace("_"," "), size, date)
 	return output
+
+def get_subdirs(dir):
+    "Get a list of immediate subdirectories"
+    return next(os.walk(dir))[1]
+
+def make_allfiles(dir):
+	subdirs = sorted(get_subdirs(dir))
+	for directory in subdirs:
+		# For each directory, recurse in, and build its' stuff first
+		# Should return with the full list of files below it
+		text = make_allfiles(dir + directory + "/")
+
+		# Write that full list to the allfiles.txt file
+		file = open(dir + "/allfiles.txt","a") 
+		file.write(text)
+		file.close()
+
+	# ADD current directory to the top of the list to return
+	file = open(dir + "directory.txt", "r") 
+	item = file.read()
+	file.close()
+
+	if subdirs == []:
+		# If there ARE no subdirs, just copy /directory to allfiles.txt
+		# (end of recursion)
+		file = open(dir + "/allfiles.txt","w") 
+		file.write(item)
+		file.close()
+	else:
+		# If there are subdirs, ADD all files (sub folder files) to the list
+		file = open(dir + "/allfiles.txt", "r") 
+		item += file.read()
+		file.close()
+
+	# Should return a list of the current dir files & then the list of all subfiles.
+	return item
 
 def loadLevel(input):
 	global file_path
@@ -172,7 +216,6 @@ def loadLevel(input):
 	files = list()
 	directories = list()
 	textfiles = ""
-	textfiles_directories = list()
 	textfiles_files = list()
 
 	for x in input.keys():
@@ -180,7 +223,6 @@ def loadLevel(input):
 			if input[x].get('url'):
 				files.append([input[x].get("date"),x,input[x]])
 			else:
-				textfiles_directories.append(x)
 				directories.append(generate_folder(x, file_path))
 				safe_make_folder(x)
 				os.chdir(x)
@@ -204,24 +246,22 @@ def loadLevel(input):
 			file = generate_file(file[1],file[2], file_path)
 			index_file += file
 
-	# Create Textfile
-	if textfiles_directories != [None, None]:
-		for folder in textfiles_directories:
-			textfiles += folder + "/\n"
 	if textfiles_files != [None, None]:
 		for url in textfiles_files:
 			textfiles += url + "\n"
 
-	file = open("allfiles.txt","w") 
+	file = open("directory.txt","w") 
 	file.write(textfiles)
 	file.close()
 
-	index_file += gen_footer()
+	index_file += gen_footer(file_path)
 
 	file = open("index.html","w") 
 	file.write(index_file)
 	file.close()
 	os.chdir('../')
+	if file_path != []:
+		file_path.pop(-1)
 
 ## Load YAML
 with open("utahcon.yaml", 'r') as stream:
@@ -236,6 +276,15 @@ os.chdir(build_folder)
 
 ## Create initial index and then recursion!
 loadLevel(utahcon)
+
+## Create allfiles.txt
+make_allfiles(build_folder)
+
+#with os.scandir(path) as it:
+#    for entry in it:
+#		file = open("dir.txt","w") 
+#		file.write(entry.name)
+#		file.close()
 
 ## Load YAML for iCal
 with open("events.yaml", 'r') as stream:
