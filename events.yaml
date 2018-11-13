@@ -7,8 +7,9 @@ SAINTCON 2019:
     alt-time : Unannounced - Possibly Oct
     url : https://saintcon.org/
 BSidesSLC 2019:
-    alt-time : Unannounced - Possibly February
-    url: https://bsidesslc.org/
+    begin: '20190221'
+    end: '20190222'
+    url: https://www.bsidesslc2019.org/
 OpenWest 2019:
     alt-time : Unannounced - Possibly April
     url: https://openwest.org/

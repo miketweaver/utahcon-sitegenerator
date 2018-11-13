@@ -54,7 +54,7 @@ def create_index(file_path):
 
 	title = "Utahcon"
 	navbar = """                <p class="navbar-text">
-                    <a href="http://utahcon.org/">Utahcon.org</a>
+                    <a href="https://utahcon.org/">Utahcon.org</a>
 """
 	url = ""
 	up_one = ""
@@ -65,7 +65,7 @@ def create_index(file_path):
 		if file_path.index(folder) == len(file_path)-1:
 			navbar += "                    <span class=\"divider\">/</span>\n                    %s\n" % name
 		else:
-			navbar += "                    <span class='divider'>/</span>\n                    <a href='http://utahcon.org/%s'>%s</a>\n" % (url, name)
+			navbar += "                    <span class='divider'>/</span>\n                    <a href='https://utahcon.org/%s'>%s</a>\n" % (url, name)
 			up_one += folder + "/"
 
 	index = head % title
@@ -148,7 +148,7 @@ def get_file_format(file_extension):
 	return formats.get(file_extension[1:], "fa-file")
 
 def gen_footer(file_path):
-	message = "For questions, contact <a href='https://twitter.com/_bashNinja' target='_blank'>@_bashNinja</a>"
+	message = "For questions, contact <a href='https://twitter.com/_bashNinja' rel='noopener' target='_blank'>@_bashNinja</a>"
 	file = open(main_path + "/foot.html", "r") 
 	item = file.read()
 	file.close()
